@@ -1,0 +1,13 @@
+# Local terraform directory (binaries and plugins)
+.terraform/
+
+# Terraform state files (CRITICAL: Never commit these)
+*.tfstate
+*.tfstate.backup
+
+# Terraform variables that might contain secrets
+*.tfvars
+*.tfvars.json
+outputs.tf
+# Local environment variables
+.env
