@@ -1,0 +1,9 @@
+apiVersion: ops.example.com/v1
+kind: NodeRefresh
+metadata:
+  name: manual-node-refresh
+spec:
+  # REPLACE THIS with the actual labels of your nodes
+  nodeSelector:
+    refresh-group: manual-trigger
+

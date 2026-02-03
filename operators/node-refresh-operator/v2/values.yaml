@@ -1,0 +1,13 @@
+# Image configuration
+image:
+  repository: 931895328127.dkr.ecr.ap-south-1.amazonaws.com/node-refresh-operator
+  tag: "v3"
+  pullPolicy: Always
+
+# Number of operator replicas
+replicaCount: 1
+
+# Where the operator pod itself runs (usually empty - any node)
+nodeSelector: {}
+tolerations: []
+affinity: {}

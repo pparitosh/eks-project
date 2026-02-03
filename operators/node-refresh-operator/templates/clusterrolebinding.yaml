@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: node-refresh-operator-binding
+subjects:
+- kind: ServiceAccount
+  name: my-node-operator
+  namespace: default # Ensure this is the namespace where your operator runs
+roleRef:
+  kind: ClusterRole
+  name: my-node-operator-role # This MUST match the output of your kubectl get command
+  apiGroup: rbac.authorization.k8s.io
