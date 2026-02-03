@@ -18,7 +18,7 @@ spec:
           properties:
             spec:
               type: object
-              x-kubernetes-preserve-unknown-fields: true
+              x-kubernetes-preserve-unknown-fields: true   #Allow any field in spec and status
             status:
               type: object
               x-kubernetes-preserve-unknown-fields: true
